@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 *, body {
-    @apply font-[Poppins];
+    @apply font-[Poppins] scroll-smooth;
 }
 
 .menu {
@@ -12,4 +12,12 @@
 
 .menu li {
     @apply mx-4;
+}
+
+.menu li > a {
+    @apply cursor-pointer hover:text-primary hover:border-b-2 border-b-primary transition-all ease-in-out delay-75;
+}
+
+.menu li > a.active {
+    @apply text-primary;
 }
