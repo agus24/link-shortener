@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*, body {
+    @apply font-[Poppins];
+}
+
+.menu {
+    @apply flex flex-row;
+}
+
+.menu li {
+    @apply mx-4;
+}
